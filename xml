@@ -1,5 +1,13 @@
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://ami.atmsoftware.pl/sipo/async/addMeasurements" xmlns:xsd="http://ksd.energa.pl/xsd">;
-   <soapenv:Header/>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://ami.atmsoftware.pl/sipo/async/addMeasurements" xmlns:xsd="http://ksd.energa.pl/xsd">
+     <soapenv:Header>
+      <p:messageInfo xsi:type="p:MessageData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://energa.com/ksd">;
+         <messageId>IBM</messageId>
+      </p:messageInfo>
+      <p:userInfo xsi:type="p:CallerData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://energa.com/ksd">;
+         <login>ksd_mock</login>
+         <ipAddress>IBM_POC</ipAddress>
+      </p:userInfo>
+   </soapenv:Header>
    <soapenv:Body>
       <add:addMeasurements>
          <xsd:ApplicationArea>
