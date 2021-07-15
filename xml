@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:add="http://ami.atmsoftware.pl/sipo/async/addMeasurements" xmlns:xsd="http://ksd.energa.pl/xsd">;
+   <soapenv:Header/>
+   <soapenv:Body>
+      <add:addMeasurements>
+         <xsd:ApplicationArea>
+            <xsd:Sender>
+               <xsd:LogicalId>ge</xsd:LogicalId>
+               <xsd:Component>so</xsd:Component>
+               <xsd:Task>quae divum incedo</xsd:Task>
+               <xsd:ReferenceId>verrantque per auras</xsd:ReferenceId>
+               <xsd:Confirmation>2</xsd:Confirmation>
+            </xsd:Sender>
+            <xsd:CreationDateTime>2008-11-15T17:52:58</xsd:CreationDateTime>
+            <xsd:BODId>regemque dedit</xsd:BODId>
+         </xsd:ApplicationArea>
+         <add:DataArea>
+            <!--1 or more repetitions:-->
+            <add:meterList>
+               <add:ppeConsumer>fremunt celsa</add:ppeConsumer>
+               <!--Optional:-->
+               <add:tariff>ferant rapidi</add:tariff>
+               <add:multiplier>3</add:multiplier>
+               <add:serialNumber>sceptra tenens</add:serialNumber>
+               <add:model>turbine corripuit scopuloque</add:model>
+               <!--1 or more repetitions:-->
+               <add:measurements>
+                  <add:obis>flammato secum dea</add:obis>
+                  <!--Optional:-->
+                  <add:otId>profundum quippe ferant</add:otId>
+                  <add:reason>nubibus ignem disiecitque</add:reason>
+                  <add:scaler>1.051732E7</add:scaler>
+                  <add:state>ac vinclis et</add:state>
+                  <add:time>2005-09-12T10:55:02+02:00</add:time>
+                  <add:type>speluncis abdidit</add:type>
+                  <add:unit>aris imponet honorem</add:unit>
+                  <add:value>1000.00</add:value>
+               </add:measurements>
+            </add:meterList>
+            <add:MeasurementID>praeterea aut</add:MeasurementID>
+         </add:DataArea>
+      </add:addMeasurements>
+   </soapenv:Body>
+</soapenv:Envelope>
